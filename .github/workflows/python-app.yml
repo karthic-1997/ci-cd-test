@@ -22,7 +22,7 @@ jobs:
           args: --acl public-read --delete
         env:
           AWS_S3_BUCKET: my-s3-web-2025-dominor
-          AWS_ACCESS_KEY_ID: ${{ AKIASRMKZVRIGJBCOAEH }}
-          AWS_SECRET_ACCESS_KEY: ${{ 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 }}
+          AWS_ACCESS_KEY_ID: ${{secrets.AKIASRMKZVRIGJBCOAEH}}
+          AWS_SECRET_ACCESS_KEY: ${{secrets.9yycRoPr5uRxaHy0gLapAhwTGaOblryXAWc/xOGx}}
           AWS_REGION: eu-north-1
           SOURCE_DIR: '.'
