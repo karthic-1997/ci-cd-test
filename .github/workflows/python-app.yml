@@ -7,10 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.x'
+
       - name: Run script
         run: python hello.py
 
@@ -21,7 +23,6 @@ jobs:
         env:
           AWS_S3_BUCKET: my-s3-web-2025-dominor
           AWS_ACCESS_KEY_ID: ${{ secrets.AKIASRMKZVRIGJBCOAEH }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.9yycRoPr5uRxaHy0gLapAhwTGaOblryXAWc/xOGx
- }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.9yycRoPr5uRxaHy0gLapAhwTGaOblryXAWc/xOGx }}
           AWS_REGION: eu-north-1
           SOURCE_DIR: '.'
